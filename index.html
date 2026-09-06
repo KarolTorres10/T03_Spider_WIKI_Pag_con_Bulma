@@ -11,21 +11,22 @@
         <!-- logo/brand -->
         <div class="navbar-brand">
             <a class="navbar-item">
-                <img src="assets/logo_spiderwiki.png" alt="site logo">
+                <img src="assets/Spiderwiki_LOGO.png" alt="site logo">
             </a>
         </div>
 
         <div class="navbar-menu" id="nav-links">
-            <div class="navbar-start">
-                <a class="navbar-item">Inicio</a>
-                <a class="navbar-item">¿Qué es el Spider-verse?</a>
-                <a class="navbar-item">Peliculas de la saga</a>
-                <a class="navbar-item">Personajes principales</a>
-                <a class="navbar-item">Curiosidades</a>
+            <div class="navbar-end">
+                <a class="navbar-item" href="#inicio">Inicio</a>
+                <a class="navbar-item" href="#que-es">¿Qué es el Spider-verse?</a>
+                <a class="navbar-item" href="#peliculas">Peliculas de la saga</a>
+                <a class="navbar-item" href="#personajes">Personajes principales</a>
+                <a class="navbar-item" href="#curiosidades">Curiosidades</a>
+                <a class="navbar-item" href="#galeria">Galería</a>
             </div>
         </div>
     </nav>
-    <section class="hero is-large is-dark">
+    <section id="inicio" class="hero is-large is-dark">
         <!-- video -->
         <div class="hero-video">
             <video id="bg-video" playsinline autoplay muted loop>
@@ -36,13 +37,13 @@
             <div class="container has-text-centered">
                 <h1 class="title">Spider-Wiki</h1>
                 <p class="subtitle">Peliculas, personajes y datos sobre la saga que cambio la industria de la animación</p>
-                <button class="button is-danger">Ver Trailer</button>
+                <a class="button is-danger" href="https://youtu.be/cqGjhVJWtEg?si=YtLai0s2hXshin6p">Ver Tráiler</a>
             </div>
         </div>
     </section>
     
     <!-- Primer Sección_Que es -->
-    <section class="section">
+    <section id="que-es" class="section">
         <div class="container">
             <div class="container has-text-centered block">
                 <h1 class="title mb-6">¿Qué es el Spider-verse?</h1>
@@ -72,7 +73,7 @@
     </section>
 
     <!-- Segunda Sección_Peliculas -->
-     <section class="section has-background-light">
+     <section id="peliculas" class="section has-background-light">
         <div class="container">
             <div class="container has-text-centered block">
                 <h1 class="title">Peliculas de la saga</h1>
@@ -122,7 +123,7 @@
         </div>
      </section>
     <!-- Tercer Sección_Personajes -->
-     <section class="section">
+     <section id="personajes" class="section">
         <div class="container">
             <div class="container has-text-centered block">
                 <h1 class="title">Personajes Principales</h1>
@@ -187,7 +188,7 @@
      </section>
 
     <!-- Cuarta Seccion_Curiosidades -->
-    <section class="section has-background-light">
+    <section id="curiosidades" class="section has-background-light">
         <div class="container">
             <h1 class="title has-text-centered mb-5 block">Curiosidades</h1>
             <div class="columns has-text-centered">
@@ -232,208 +233,592 @@
     </section>
 
     <!-- Quinta seccion_Galeria -->
-     <section class="section">
+     <section id="galeria" class="section">
         <div class="container">
-            <h1 class="title has-text-centered mb-6 block">Galeria</h1>
-        <!-- Primer Fila -->
+            <h1 class="title has-text-centered mb-6 block">Galería</h1>
+    <!-- Primer Fila -->
             <div class="columns is-variable is-1 mb-1">
+            <!-- Img galeria 01 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_01.jpg?bwg=1699895277"
-                        alt="Spider escene 1">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal01')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_01.jpg?bwg=1699895277">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal01" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal01')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_01.jpg?bwg=1699895277">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal01')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 02 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_02.jpg?bwg=1699895277"
-                        alt="Spider escene 2">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal02')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_02.jpg?bwg=1699895277">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal02" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal02')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_02.jpg?bwg=1699895277">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal02')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 03 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_03.jpg?bwg=1699895277"
-                        alt="Spider escene 3">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal03')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_03.jpg?bwg=1699895277">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal03" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal03')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_03.jpg?bwg=1699895277">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal03')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 04 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_04.jpg?bwg=1699895277"
-                        alt="Spider escene 4">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal04')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_04.jpg?bwg=1699895277">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal04" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal04')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_04.jpg?bwg=1699895277">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal04')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 05 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_05.jpg?bwg=1699895277"
-                        alt="Spider escene 5">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal05')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_05.jpg?bwg=1699895277">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal05" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal05')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_05.jpg?bwg=1699895277">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal05')"></button>
+                    </div>
                 </div>
             </div>
-        <!-- Segunda Fila -->
+    <!-- Segunda Fila -->
             <div class="columns is-variable is-1 mb-1">
+                <!-- Img galeria 06 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_11.jpg?bwg=1699895276"
-                        alt="Spider escene 6">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal06')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_11.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal06" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal06')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_11.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal06')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 07 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_12.jpg?bwg=1699895276"
-                        alt="Spider escene 7">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal07')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_12.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal07" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal07')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_12.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal07')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 08 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_13.jpg?bwg=1699895277"
-                        alt="Spider escene 8">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal08')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_13.jpg?bwg=1699895277">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal08" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal08')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_13.jpg?bwg=1699895277">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal08')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 09 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_14.jpg?bwg=1699895277"
-                        alt="Spider escene 9">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal09')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_14.jpg?bwg=1699895277">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal09" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal09')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_14.jpg?bwg=1699895277">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal09')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 10 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_15.jpg?bwg=1699895276"
-                        alt="Spider escene 10">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal10')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_15.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal10" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal10')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_15.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal10')"></button>
+                    </div>
                 </div>
             </div>
-        <!-- Tercer Fila -->
+    <!-- Tercer Fila -->
             <div class="columns is-variable is-1 mb-1">
+                <!-- Img galeria 11 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_21.jpg?bwg=1699895276"
-                        alt="Spider escene 11">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal11')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_21.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal11" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal11')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_21.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal11')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 12 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_22.jpg?bwg=1699895276"
-                        alt="Spider escene 12">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal12')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_22.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal12" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal12')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_22.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal12')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 13 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_23.jpg?bwg=1699895276"
-                        alt="Spider escene 13">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal13')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_23.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal13" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal13')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_23.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal13')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 14 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_24.jpg?bwg=1699895276"
-                        alt="Spider escene 14">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal14')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_24.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal14" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal14')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_24.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal14')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 15 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_25.jpg?bwg=1699895276"
-                        alt="Spider escene 15">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal15')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_25.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal15" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal15')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_25.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal15')"></button>
+                    </div>
                 </div>
             </div>
-        <!-- Cuarta Fila -->
+    <!-- Cuarta Fila -->
             <div class="columns is-variable is-1 mb-1">
+                <!-- Img galeria 16 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_30.jpg?bwg=1699895276"
-                        alt="Spider escene 16">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal16')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_30.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal16" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal16')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_30.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal16')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 17 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_31.jpg?bwg=1699895276"
-                        alt="Spider escene 17">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal17')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_31.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal17" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal17')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_31.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal17')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 18 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_32.jpg?bwg=1699895276"
-                        alt="Spider escene 18">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal18')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_32.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal18" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal18')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_32.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal18')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 19 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_33.jpg?bwg=1699895276"
-                        alt="Spider escene 19">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal19')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_33.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal19" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal19')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_33.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal19')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 20 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_35.jpg?bwg=1699895276"
-                        alt="Spider escene 20">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal20')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_35.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal20" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal20')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_35.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal20')"></button>
+                    </div>
                 </div>
             </div>
-        <!-- Quinta Fila -->
+    <!-- Quinta Fila -->
             <div class="columns is-variable is-1 mb-1">
+                <!-- Img galeria 21 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_46.jpg?bwg=1699895276"
-                        alt="Spider escene 21">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal21')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_42.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal21" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal21')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_42.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal21')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 22 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_42.jpg?bwg=1699895276"
-                        alt="Spider escene 22">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal22')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_43.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal22" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal22')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_43.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal22')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 23 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_43.jpg?bwg=1699895276"
-                        alt="Spider escene 23">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal23')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_44.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal23" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal23')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_44.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal23')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 24 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_44.jpg?bwg=1699895276"
-                        alt="Spider escene 24">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal24')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_46.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal24" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal24')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_46.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal24')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 25 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_50.jpg?bwg=1699895276"
-                        alt="Spider escene 25">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal25')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_50.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal25" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal25')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_50.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal25')"></button>
+                    </div>
                 </div>
             </div>
-        <!-- Sexta Fila -->
-            <div class="columns is-variable is-1 block">
+    <!-- Sexta Fila -->
+            <div class="columns is-variable is-1">
+                <!-- Img galeria 26 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_56.jpg?bwg=1699895276"
-                        alt="Spider escene 26">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal26')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_56.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal26" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal26')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_56.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal26')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 27 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_57.jpg?bwg=1699895276"
-                        alt="Spider escene 27">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal27')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_57.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal27" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal27')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_57.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal27')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 28 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_62.jpg?bwg=1699895276"
-                        alt="Spider escene 28">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal28')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_62.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal28" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal28')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_62.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal28')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 29 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_64.jpg?bwg=1699895276"
-                        alt="Spider escene 29">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal29')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_64.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal29" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal29')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_64.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal29')"></button>
+                    </div>
                 </div>
+            <!-- Img galeria 30 -->
                 <div class="column is-one-fifth-desktop is-half-mobile">
-                    <figure class="image is-2by1">
-                        <img src="https://film-grab.com/wp-content/uploads/photo-gallery/thumb/Across_The_Spider_Verse_65.jpg?bwg=1699895276"
-                        alt="Spider escene 30">
-                    </figure>
+                    <a href="javascript:void(0);" onclick="abrirModal('modal-gal30')">
+                        <figure class="image is-2by1">
+                            <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_65.jpg?bwg=1699895276">
+                        </figure>
+                    </a>
+                    <!-- Acciones del modal -->
+                    <div id="modal-gal30" class="modal">
+                        <div class="modal-background" onclick="cerrarModal('modal-gal30')"></div>
+                        <div class="modal-content">
+                            <figure>
+                                <img src="https://film-grab.com/wp-content/uploads/photo-gallery/Across_The_Spider_Verse_65.jpg?bwg=1699895276">
+                            </figure>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" onclick="cerrarModal('modal-gal30')"></button>
+                    </div>
                 </div>
             </div>
         </div>
      </section>
+
+    <!-- Footer -->
+     <section class="section has-background-black mt-6">
+        <footer class="Footer has-background-black has-text-white">
+            <div class="content has-text-centered">
+                <p>
+                    <span class="has-text-weight-bold">Spider-Verse Wiki</span> — Página informativa creada con 
+                    <span class="has-text-warning has-text-weight-bold">Bulma CSS</span>.
+                </p>
+                <p>
+                    Todas las imagenes utilizadas en la pagina web fueron extraidas de 
+                    <a href="https://film-grab.com/2023/12/11/spider-man-across-the-spider-verse/">FILMGRAB</a>.
+                </p>
+                <p>
+                    Contenido con fines educativos e informativos. 
+                    Los derechos de la saga cinematográfica del Spider-Verse corresponden a 
+                    <span class="has-text-weight-bold">Sony Pictures Entertainment</span>.
+                </p>
+            </div>
+        </footer>
+     </section>
+
+<!-- Enlace a js -->
+    <script src="JS/script.js"></script>     
 </body>
 </html>
